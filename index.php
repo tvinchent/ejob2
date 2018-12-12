@@ -22,31 +22,17 @@
   <a href=""></a>
 
   <ul>
-<<<<<<< HEAD:index.php
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-=======
-<li>Arbouille Maxime</li>
-<li>Bouchez Marc</li>
-<li>Delcampe Aymeric</li>
-<li>Descharles Vincent</li>
-<li>Guerinot Théo</li>
-<li>Jeannin Jessy</li>
-<li>Macret Jonathn</li>
-<li>Mouillard Rémi</li>
-<li>Passeleu Thomas</li>
-<li>Reisenleiter Bryan</li>
-<li>Thomas Antoine</li>
->>>>>>> master:listing_etudiants.html
+    <li>Arbouille Maxime</li>
+    <li>Bouchez Marc</li>
+    <li>Delcampe Aymeric</li>
+    <li>Descharles Vincent</li>
+    <li>Guerinot Théo</li>
+    <li>Jeannin Jessy</li>
+    <li>Macret Jonathn</li>
+    <li>Mouillard Rémi</li>
+    <li>Passeleu Thomas</li>
+    <li>Reisenleiter Bryan</li>
+    <li>Thomas Antoine</li>
   </ul>
 
 </body>
