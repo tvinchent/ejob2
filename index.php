@@ -10,30 +10,48 @@
 </head>
 
 <body>
-  
+
+ <fieldset> 
+
   <nav>
     <a href="">2017</a>
     <a href="">2018</a>
     <a href="">2019</a>
   </nav>
   
+
+
   <h1>Ejob2</h1>
   
-  <a href="contact.php">Accéder au formulaire</a>
+  <a href="contact.php">Accéder au formulaire</a>  
 
   <ul>
     <li>Arbouille Maxime</li>
     <li>Bouchez Marc</li>
     <li>Delcampe Aymeric</li>
+  </ul>
+  <br>
+
+  <ul>
     <li>Descharles Vincent</li>
     <li>Guerinot Théo</li>
     <li>Jeannin Jessy</li>
-    <li>Macret Jonathn</li>
+  </ul>
+  <br>
+
+  <ul>
+    <li>Macret Jonathan</li>
     <li>Mouillard Rémi</li>
     <li>Passeleu Thomas</li>
+  </ul>
+  <br>
+  
+  <ul>
     <li>Reisenleiter Bryan</li>
     <li>Thomas Antoine</li>
   </ul>
+
+   </fieldset>
 
 </body>
 
