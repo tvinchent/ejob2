@@ -10,12 +10,12 @@
     <h1></h1>
 
         <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
-            <br><input type="text"><br>
-            <br><input type="email"><br>
-            <br><input type="phone"><br><br>
-            <textarea id="form-message"></textarea><br>
-            <input type="checkbox"><br>
-            <input type="submit" value="">
+            <br>Nom<input type="text"><br>
+            <br>Email<input type="email"><br>
+            <br>Téléphone<input type="phone"><br><br>
+            <textarea id="form-message">Message</textarea><br>
+            Newsletter<input type="checkbox"><br>
+            <input type="submit" value="Envoyer">
         </form>
 </body>
 </html>
