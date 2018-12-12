@@ -9,14 +9,14 @@
 <body>
 
     <nav>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="">2017</a>
+        <a href="">2018</a>
+        <a href="">2019</a>
     </nav>
     
-    <h1></h1>
+    <h1>Formulaire</h1>
 
-    <a href=""></a>
+    <a href="">Revenir à la page précédente.</a>
 
         <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
             <br>Nom<input type="text"><br>
