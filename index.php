@@ -19,7 +19,7 @@
   
   <h1>Ejob2</h1>
   
-  <a href="">Accéder au formulaire</a>
+  <a href="contact.php">Accéder au formulaire</a>
 
   <ul>
     <li>Arbouille Maxime</li>
