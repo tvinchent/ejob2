@@ -7,7 +7,16 @@
 </head>
 
 <body>
+
+    <nav>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+    
     <h1></h1>
+
+    <a href=""></a>
 
         <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
             <br><input type="text"><br>
