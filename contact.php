@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Ejob2</title>
-
+    
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form_contact.css">
 </head>
 
@@ -19,7 +19,7 @@
     
     <h1>Formulaire</h1>
 
-    <a href="">Revenir à la page précédente.</a>
+    <a href="index.php">Revenir à la page précédente.</a>
     <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
             <label>   <br>Nom : </label> <input class="" type="text">
             <label>  <br>Email : </label><input type="email">
