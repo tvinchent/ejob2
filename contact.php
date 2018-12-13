@@ -1,24 +1,29 @@
 <?php
-    if(isset($_POST['boutton'])){
-        if(empty($_POST['textarea'])){
-            echo "Aucun message";}}
-    
-             if(isset($_POST['boutton'])) {
-        if(!isset($_POST['message']) || $_POST['message'] == '') {
-            echo('Vous n avez pas saisi de texte');
-        } else {
-            $headers = $_POST['email'];
-            mail("adresse@email.com","Formulaire de mon CV en ligne",$_POST['textarea'], $headers);
-            echo("Votre mail a bien été envoyé.");
-        }
+if (isset($_POST['boutton'])) {
+    $erreurs = array();
+    if (empty($_POST['name'])) {
+        $erreurs['name'] = 'Pas de nom';
+        echo ("Vous n'avez pas entré de nom");
     }
-            elseif(isset($_POST['autorisation'])){
-                $adresseMail=$_POST['email'];
-    $db=new PDO('mysql:host=localhost;dbname=ejob2;charset=utf8','root','');
- $result=$db->prepare('INSERT INTO mail (mail) VALUES (:adresseMail)');
-$result->execute (array('adresseMail'=>$adresseMail));
+    if (empty($_POST['tel'])) {
+        $erreurs['tel'] = 'Pas de tel';
+        echo ("Vous n'avez pas entré de numéro de téléphone");
     }
-   ?>
+    if (empty($_POST['subject'])) {
+        $erreurs['subject'] = 'Pas de subject';
+        echo ("Vous n'avez pas choisi de destinataire");
+    }
+    if (!isset($_POST['message']) || $_POST['message'] == '') {
+        $erreurs['message'] = 'Pas de message';
+        echo ("Vous n'avez pas saisi de texte");
+    }
+    if (empty($erreurs)) {
+        $headers = $_POST['email'];
+        mail("adresse@email.com", "Formulaire de mon CV en ligne", $_POST['textarea'], $headers);
+        echo ("Votre mail a bien été envoyé.");
+    }
+}    
+?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -43,9 +48,9 @@ $result->execute (array('adresseMail'=>$adresseMail));
         
         <a href="index.php">Revenir à la page précédente.</a>
         <form name="formulaire" method="post">
-                <label>   <br>Nom : </label> <input class="" type="text">
+                <label>   <br>Nom : </label> <input name="name" class="" type="text">
                 <label>  <br>Email : </label><input type="email" name ="email">
-                <label>  <br>Téléphone : </label><input type="phone">
+                <label>  <br>Téléphone : </label><input name="tel" type="phone">
                <label> Destinataire :</label> <select name="subject">
                     <option value="">Arbouille Maxime</option>
                     <option value="">Bouchez Marc</option>
