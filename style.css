@@ -4,16 +4,31 @@ body{
     font-family: 'Cardo', serif;
     color:black;
 }
-h1{
-    font-family: 'Volkhov', serif;
+h1 {
+    color: gray;
 }
 
-
-li{
-	list-style-type: none;
+h2 {
+    color: gray;
 }
 
-ul > li{
-	float: left; 
-	position: relative;
+body {
+    background-color: white;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 1px 1px 30px #333;
+}
+
+html {
+    background-color: gray;
+}
+.form{
+align-content: center;
+}
+label{
+    display: block;
+    margin-top: 5px;
+}
+.navbar{
+    float: right;
 }
