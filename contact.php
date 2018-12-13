@@ -19,7 +19,7 @@
     
     <h1>Formulaire</h1>
 
-    <a href="">Revenir à la page précédente.</a>
+    <a href="index.php">Revenir à la page précédente.</a>
     <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
             <label>   <br>Nom : </label> <input class="" type="text">
             <label>  <br>Email : </label><input type="email">

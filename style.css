@@ -9,29 +9,7 @@ h1 {
 }
 
 <<<<<<< HEAD
-ul{
-	display: flex;
-	justify-content: space-between;
-}
 
-li{
-	list-style-type: none;
-	text-align: center;
-}
-
-ul > li{
-	float: inherit; 
-	position: relative;
-
-}
-
-.flex{
-	display: flex;
-	justify-content: space-between;
-}
-
-fieldset{
-	background-color: white;
 =======
 h2 {
     color: gray;

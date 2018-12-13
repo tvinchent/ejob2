@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Rokkitt|Volkhov');
+body{
+    background: #7B7B7B;
+    font-family: 'Cardo', serif;
+    color:black;
+}
+h1{
+    font-family: 'Volkhov', serif;
+}
+
+ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+li{
+	list-style-type: none;
+	text-align: center;
+}
+
+ul > li{
+	float: inherit; 
+	position: relative;
+
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+fieldset{
+	background-color: white;
+}
+
+.align{
+	display: flex;
+	justify-content: space-between;
+}
