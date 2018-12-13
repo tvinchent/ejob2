@@ -1,12 +1,52 @@
 .form{
-align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    text-align: center;
 }
 
-label{
-    display: block;
-    margin-top: 5px;
+.input-mail-name,
+.input-tel-select,
+.input-message-check {
+    margin: 25px auto;
+    width: 700px;
 }
 
-.navbar{
-    float: right;
+.btn-subtmit {
+    margin: auto;
+    width: 30%;
+}
+
+.btn-subtmit:hover {
+    background-color: #BF0069;
+    color: white;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 100%;
+}
+
+input, 
+select,
+textarea {
+    width: 35%;
+    padding-left: 10px;
+    height: 25px;
+    background: none;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    width: 400px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #BF0069;
 }

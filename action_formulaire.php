@@ -29,7 +29,7 @@ if (isset($_POST['boutton'])) {
            $(document).on('submit', '#formulaire_mail', function(e) {
             $.ajax({
                 type: 'post',
-                url: 'contact.php',
+                url: 'action_formulaire.php',
                 data: $(this).serialize(),
             });
             e.preventDefault();
