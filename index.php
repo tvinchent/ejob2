@@ -12,43 +12,45 @@
 <body>
 
  <fieldset> 
+<div class="flex">
+  
+ <h1>Ejob2</h1>
 
   <nav>
     <a href="">2017</a>
     <a href="">2018</a>
     <a href="">2019</a>
   </nav>
-  
 
 
-  <h1>Ejob2</h1>
+  </div>
   
   <a href="contact.php">Accéder au formulaire</a>  
 
   <ul>
-    <li>Arbouille Maxime</li>
-    <li>Bouchez Marc</li>
-    <li>Delcampe Aymeric</li>
+    <fieldset><li>Arbouille Maxime</li></fieldset>
+    <fieldset><li>Bouchez Marc</li></fieldset>
+    <fieldset><li>Delcampe Aymeric</li></fieldset>
   </ul>
   <br>
 
   <ul>
-    <li>Descharles Vincent</li>
-    <li>Guerinot Théo</li>
-    <li>Jeannin Jessy</li>
+    <fieldset><li>Descharles Vincent</li></fieldset>
+    <fieldset><li>Guerinot Théo</li></fieldset>
+    <fieldset><li>Jeannin Jessy</li></fieldset>
   </ul>
   <br>
 
   <ul>
-    <li>Macret Jonathan</li>
-    <li>Mouillard Rémi</li>
-    <li>Passeleu Thomas</li>
+    <fieldset><li>Macret Jonathan</li></fieldset>
+    <fieldset><li>Mouillard Rémi</li></fieldset>
+    <fieldset><li>Passeleu Thomas</li></fieldset>
   </ul>
   <br>
-  
+
   <ul>
-    <li>Reisenleiter Bryan</li>
-    <li>Thomas Antoine</li>
+    <fieldset><li>Reisenleiter Bryan</li></fieldset>
+    <fieldset><li>Thomas Antoine</li></fieldset>
   </ul>
 
    </fieldset>
