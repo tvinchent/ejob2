@@ -9,13 +9,23 @@ li{
 	list-style-type: none;
 	text-align: center;
 
-	border: 1px solid #404040;
+    border: 1px solid #404040;
+    text-transform: uppercase;
+}
+
+li:hover {
+    cursor: pointer;
 }
 
 ul > li{
 	float: inherit; 
 	position: relative;
 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #404040;
 }
 
 li:hover {
