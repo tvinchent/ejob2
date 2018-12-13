@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Ejob2</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form_contact.css">
 </head>
 
 <body>
