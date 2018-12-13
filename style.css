@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Rokkitt|Volkhov');
-body{
-    background: #7B7B7B;
-    font-family: 'Cardo', serif;
-    color:black;
+
+html{
+    background-color: grey;
+}
+body {
+    background-color: white;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 1px 1px 30px #333;
+    font-family: "Cardo", sans-serif;
 }
 
+h1, h2 {
+    color: gray;
+    font-family: 'Volkhov', serif;
+}
 
