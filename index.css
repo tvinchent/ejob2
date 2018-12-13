@@ -4,11 +4,12 @@ ul{
 }
 
 li{
+	width: 20%;
 	padding: 15px 30px;
 	list-style-type: none;
 	text-align: center;
 
-	border: 1px solid #202020;
+	border: 1px solid #404040;
 }
 
 ul > li{
@@ -25,4 +26,4 @@ ul > li{
 .align{
 	display: flex;
 	justify-content: space-between;
-}
+}	

@@ -14,17 +14,15 @@
 
 
 <div class="flex">
-  
- <h1>Ejob2</h1>
+  <h1>Ejob2</h1>
+    <nav>
+      <a href="">2017</a>
+      <a href="">2018</a>
+      <a href="">2019</a>
+    </nav>
+</div>
 
-  <nav>
-    <a href="">2017</a>
-    <a href="">2018</a>
-    <a href="">2019</a>
-  </nav>
 
-
-  </div>
   
   <a href="contact.php">Accéder au formulaire</a>  
 
