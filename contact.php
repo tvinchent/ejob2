@@ -47,22 +47,22 @@ if (isset($_POST['boutton'])) {
         <h1>Formulaire</h1>
         
         <a href="index.php">Revenir à la page précédente.</a>
-        <form name="formulaire" method="post">
+        <form name="formulaire" id="formulaire_mail" method="post">
                 <label>   <br>Nom : </label> <input name="name" class="" type="text">
                 <label>  <br>Email : </label><input type="email" name ="email">
                 <label>  <br>Téléphone : </label><input name="tel" type="phone">
                <label> Destinataire :</label> <select name="subject">
-                    <option value="">Arbouille Maxime</option>
-                    <option value="">Bouchez Marc</option>
-                    <option value="">Delcampe Aymeric</option>
-                    <option value="">Descharles Vincent</option>
-                    <option value="">Guerinot Théo</option>
-                    <option value="">Jeannin Jessy</option>
-                    <option value="">Macret Jonathan</option>
-                    <option value="">Mouillard Rémi</option>
-                    <option value="">Passeleu Thomas</option>
-                    <option value="">Reisenleiter Bryen</option>
-                    <option value="">Thomas Antoine</option>
+                    <option value="Arbouille Maxime">Arbouille Maxime</option>
+                    <option value="Bouchez Marc">Bouchez Marc</option>
+                    <option value="Delcampe Aymeric">Delcampe Aymeric</option>
+                    <option value="Descharles Vincent">Descharles Vincent</option>
+                    <option value="Guerinot Theo">Guerinot Theo</option>
+                    <option value="Jeannin Jessy">Jeannin Jessy</option>
+                    <option value="Macret Jonathan">Macret Jonathan</option>
+                    <option value="Mouillard Remi">Mouillard Remi</option>
+                    <option value="Passeleu Thomas">Passeleu Thomas</option>
+                    <option value="Reisenleiter Bryan">Reisenleiter Bryan</option>
+                    <option value="Thomas Antoine">Thomas Antoine</option>
                </select>
                 <label>   Message :</label> <textarea id="form-message" name="message"> </textarea>
                 <label><input type="checkbox"> Newsletter</label>
