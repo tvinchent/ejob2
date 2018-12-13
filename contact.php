@@ -1,3 +1,24 @@
+<?php
+    if(isset($_POST['boutton'])){
+        if(empty($_POST['textarea'])){
+            echo "Aucun message";}}
+    
+             if(isset($_POST['boutton'])) {
+        if(!isset($_POST['message']) || $_POST['message'] == '') {
+            echo('Vous n avez pas saisi de texte');
+        } else {
+            $headers = $_POST['email'];
+            mail("adresse@email.com","Formulaire de mon CV en ligne",$_POST['textarea'], $headers);
+            echo("Votre mail a bien été envoyé.");
+        }
+    }
+            elseif(isset($_POST['autorisation'])){
+                $adresseMail=$_POST['email'];
+    $db=new PDO('mysql:host=localhost;dbname=ejob2;charset=utf8','root','');
+ $result=$db->prepare('INSERT INTO mail (mail) VALUES (:adresseMail)');
+$result->execute (array('adresseMail'=>$adresseMail));
+    }
+   ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -21,9 +42,9 @@
         <h1>Formulaire</h1>
         
         <a href="index.php">Revenir à la page précédente.</a>
-        <form name="formulaire" method="post" action="mailto:yourdaddy@papa.com">
+        <form name="formulaire" method="post">
                 <label>   <br>Nom : </label> <input class="" type="text">
-                <label>  <br>Email : </label><input type="email">
+                <label>  <br>Email : </label><input type="email" name ="email">
                 <label>  <br>Téléphone : </label><input type="phone">
                <label> Destinataire :</label> <select name="subject">
                     <option value="">Arbouille Maxime</option>
@@ -38,10 +59,10 @@
                     <option value="">Reisenleiter Bryen</option>
                     <option value="">Thomas Antoine</option>
                </select>
-                <label>   Message :</label> <textarea id="form-message"> </textarea>
+                <label>   Message :</label> <textarea id="form-message" name="message"> </textarea>
                 <label><input type="checkbox"> Newsletter</label>
                 
-                <input type="submit" value="Envoyer">
+                <input name="boutton" type="submit" value="Envoyer" >
                 
         </form>
     </div>
