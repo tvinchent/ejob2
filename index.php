@@ -27,29 +27,29 @@
       <a href="contact.php">Accéder au formulaire</a>  
     
       <ul>
-        <li>Arbouille Maxime</li>
-        <li>Bouchez Marc</li>
-        <li>Delcampe Aymeric</li>
+        <li><a target="_blank" href="images/cv.png">Arbouille Maxime</a></li>
+        <li><a target="_blank" href="images/cv.png">Bouchez Marc</a></li>
+        <li><a target="_blank" href="images/cv.png">Delcampe Aymeric</a></li>
       </ul>
       <br>
     
       <ul>
-        <li>Descharles Vincent</li>
-        <li>Guerinot Théo</li>
-        <li>Jeannin Jessy</li>
+        <li><a target="_blank" href="images/cv.png">Descharles Vincent</a></li>
+        <li><a target="_blank" href="images/cv.png">Guerinot Théo</a></li>
+        <li><a target="_blank" href="images/cv.png">Jeannin Jessy</a></li>
       </ul>
       <br>
     
       <ul>
-        <li>Macret Jonathan</li>
-        <li>Mouillard Rémi</li>
-        <li>Passeleu Thomas</li>
+        <li><a target="_blank" href="images/cv.png">Macret Jonatha</a>n</li>
+        <li><a target="_blank" href="images/cv.png">Mouillard Rémi</a></li>
+        <li><a target="_blank" href="images/cv.png">Passeleu Thomas</a></li>
       </ul>
       <br>
     
       <ul>
-        <li>Reisenleiter Bryan</li>
-        <li>Thomas Antoine</li>
+        <li><a target="_blank" href="images/cv.png">Reisenleiter Bryan</a></li>
+        <li><a target="_blank" href="images/cv.png">Thomas Antoine</a></li>
       </ul>
     
     </div>
