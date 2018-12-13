@@ -19,7 +19,7 @@
 
 
     <!-- LISTE ETUDIANT -->
-      <div class="container">
+      <div class="container-in visible">
         <div class="header">
           <h1>Liste étudiants - Edison 2018</h1>
           <nav>
@@ -27,7 +27,7 @@
             <a href="">2018</a>
             <a href="">2019</a>
           </nav>
-          <a class="link" href="contact.php">Accéder au formulaire</a>  
+          <a class="link" toHide="container-in" toToggle="container-out">Accéder au formulaire</a>  
         </div>
       
         <ul class="eleves">
@@ -49,7 +49,7 @@
       </div>
 
       <!-- FORMULAIRE -->
-        <div class="container">
+        <div class="container-out">
             <div class="header">
                 <h1>Contactez nous - Edison 2018</h1>
                 <nav>
@@ -57,7 +57,7 @@
                     <a href="">2018</a>
                     <a href="">2019</a>
                 </nav>
-                <a class="link" href="index.php">Retourner au tableau</a>  
+                <a class="link" toHide="container-out" toToggle="container-in">Retourner au tableau</a>  
             </div>
             <form class="form" name="formulaire" id="formulaire_mail" method="post">
                 <br>
@@ -105,6 +105,15 @@ $(document).ready(function(){
   $('.hideModal').on('click', function(){
     idToHide = $(this).attr('id')
     $('#toggle'+idToToggle).css('display', 'none')
+  })
+
+  $('.link').on('click', function(){
+    containerToToggle = $(this).attr('toToggle')
+    containerToHide = $(this).attr('toHide')
+    console.log(containerToToggle)
+    $('.'+containerToToggle).addClass('visible')
+    $('.'+containerToHide).removeClass('visible')
+
   })
 })
 </script>

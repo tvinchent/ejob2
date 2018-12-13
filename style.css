@@ -24,7 +24,8 @@ body {
     /* overflow-y: scroll; */
 }
 
-.container {
+.container-in, 
+.container-out {
     position: fixed;
     top: 50px;
     bottom: 0px;
@@ -206,56 +207,61 @@ li a {
 /*
  * ─── FLIP FLAP ──────────────────────────────────────────────────────────────────
  */
-    .paused {
-        animation-play-state: paused;
+    .container-in.visible, 
+    .container-out.visible {
+        animation-play-state: running;
+        display: block;
     }
-    .container {
-        -webkit-animation: flipinx 2s linear 0s 1 normal;
-        -moz-animation: flipinx 2s linear 0s 1 normal;
-        -ms-animation: flipinx 2s linear 0s 1 normal;
+    .container-in,
+    .container-out {
+        animation-play-state: paused;
+        display: none;
+    }
+    .container-in {
         animation: flipinx 2s linear 0s 1 normal;
     }
 
-    @-webkit-keyframes flipinx {
+    .container-out {
+        animation: flipoutx 2s linear 0s 1 normal;
+    }
+
+
+    @keyframes flipinx {
         0% {
-            opacity: 0;
-            -webkit-transform: perspective(400px) rotateX(0deg);
+            /* opacity: 0; */
             transform: perspective(400px) rotateX(90deg);
         }
 
         40% {
-            -webkit-transform: perspective(400px) rotateX(0deg);
             transform: perspective(400px) rotateX(-10deg);
         }
 
         70% {
-            -webkit-transform: perspective(400px) rotateX(0deg);
             transform: perspective(400px) rotateX(10deg);
         }
 
         100% {
-            opacity: 1;
-            -webkit-transform: perspective(400px) rotateX(0deg);
+            /* opacity: 1; */
             transform: perspective(400px) rotateX(0deg);
         }
     }
 
-    @keyframes flipinx {
+    @keyframes flipoutx {
         0% {
-            opacity: 0;
-            transform: perspective(400px) rotateX(90deg);
+            /* opacity: 0; */
+            transform: perspective(400px) rotateX(-90deg);
         }
 
         40% {
-            transform: perspective(400px) rotateX(-10deg);
-        }
-
-        70% {
             transform: perspective(400px) rotateX(10deg);
         }
 
+        70% {
+            transform: perspective(400px) rotateX(-10deg);
+        }
+
         100% {
-            opacity: 1;
+            /* opacity: 1; */
             transform: perspective(400px) rotateX(0deg);
         }
     }
