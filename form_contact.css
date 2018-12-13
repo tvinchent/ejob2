@@ -1,17 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Rokkitt|Volkhov');
-body{
-    background: #7B7B7B;
-    font-family: 'Cardo', serif;
-    color:black;
-}
-<<<<<<< HEAD
 h1 {
     color: gray;
 }
 
-<<<<<<< HEAD
-
-=======
 h2 {
     color: gray;
 }
@@ -35,7 +25,4 @@ label{
 }
 .navbar{
     float: right;
->>>>>>> master
 }
-=======
->>>>>>> master
