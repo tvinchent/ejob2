@@ -19,7 +19,7 @@ if (isset($_POST['boutton'])) {
     }
     if (empty($erreurs)) {
         $headers = $_POST['email'];
-        mail("adresse@email.com", "Formulaire de mon CV en ligne", $_POST['textarea'], $headers);
+        mail("adresse@email.com", "Formulaire de mon CV en ligne", $_POST['message'], $headers);
         echo ("Votre mail a bien été envoyé.");
     }
 }    
