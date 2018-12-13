@@ -4,5 +4,26 @@ body{
     font-family: 'Cardo', serif;
     color:black;
 }
+<<<<<<< HEAD
+h1{
+    font-family: 'Volkhov', serif;
+}
 
 
+
+ul > li{
+	float: inherit; 
+	position: relative;
+
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+fieldset{
+	background-color: white;
+}
+=======
+>>>>>>> master
