@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Rokkitt|Volkhov');
 
+@dark-accent : #383838;
+@light-accent : #F5F5F5;
+@color-accent : #2c68e9;
+@color-accent-opa : fade(@color-accent, 60%);
+@color-accent-hover : fadeout(@color-accent, 10%);
+
 body {
     margin: 0;
     padding: 0;
@@ -15,26 +21,23 @@ body {
 }
 
 .bg-grey {
-    background-color: #383838;
+    background-color: @dark-accent;
 }
 
 .bg-purple {
-    background-color: #BF0069;
+    background-color: @color-accent;
     transform: skew(45deg);
-    transition-duration: 600ms;
+    transition-duration: 800ms;
+    transition-timing-function: ease-out;
     /* overflow-y: scroll; */
 }
 
 .container-in, 
 .container-out {
     position: fixed;
-    top: 50px;
-    bottom: 0px;
-    left: 50px;
-    right: 0px;
-    background-color: #F5F5F5;
+    background-color: @light-accent;
     padding: 50px;
-    box-shadow: 1px 1px 30px #333;
+    box-shadow: 1px 1px 30px @dark-accent;
     font-family: "Cardo",
         sans-serif;
     /* transform: skew(-45deg) translateX(-35px); */
@@ -55,16 +58,16 @@ h2 {
 h1 {
     font-size: 1.4rem;
     color: white;
-    background-color: #383838;
+    background-color: @dark-accent;
     padding: 10px;
-    box-shadow: 0 0 5px #808080;
+    box-shadow: 0 0 5px @dark-accent;
 }
 
 .header nav a {
     color: white;
-    background-color: #383838;
+    background-color: @dark-accent;
     padding: 10px;
-    box-shadow: 0 0 5px #808080;
+    box-shadow: 0 0 5px @dark-accent;
 }
 
 .link {
@@ -72,9 +75,9 @@ h1 {
     margin-right: 70%;
     text-decoration: none;
     color: white;
-    background-color: #BF0069;
+    background-color: @color-accent;
     padding: 10px;
-    box-shadow: 0 0 5px #808080;
+    box-shadow: 0 0 5px @dark-accent;
     text-transform: uppercase;
 }
 
@@ -103,8 +106,8 @@ h1 {
 }
 
 .btn-subtmit:hover {
-    background-color: #BF0069;
-    color: white;
+    background-color: @color-accent;
+    color: @light-accent;
     cursor: pointer;
 }
 
@@ -119,7 +122,7 @@ textarea {
     padding-left: 10px;
     height: 25px;
     background: none;
-    border: 1px solid #808080;
+    border: 1px solid @dark-accent;
     border-radius: 5px;
     outline: none;
 }
@@ -132,7 +135,7 @@ textarea {
 input:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid #BF0069;
+    border: 1px solid @color-accent;
 }
 
 .eleves {
@@ -152,34 +155,25 @@ li {
 
     /* border: 1px solid #404040; */
     text-transform: uppercase;
-    box-shadow: 0 0 3px #808080;
+    box-shadow: 0 0 3px @dark-accent;
 }
 
 li:hover {
-    box-shadow: 0 0 10px #909090;
+    box-shadow: 0 0 10px @dark-accent;
     transform: scale(1.01);
     cursor: pointer;
 }
 
-
-li {
-    background-color: rgba(104, 104, 104, 0.733);
-}
-
 li:nth-child(odd) {
-    background-color: rgba(231, 84, 165, 0.733);
-}
-
-li:hover {
-    background-color: rgba(58, 58, 58, 0.733);
+    background-color: @color-accent-opa;
 }
 
 li:nth-child(odd):hover {
-    background-color: rgba(230, 32, 141, 0.733);
+    background-color: @color-accent-hover;
 }
 
 li {
-    color: white;
+    color: @light-accent;
     text-decoration: none;
     font-family: 'Cardo', sans-serif;
 }
@@ -196,8 +190,8 @@ li {
      left: 40px;
      right: 40px;
      text-align: center;
-     background-color: white;
-     box-shadow: 0 0 18px #202020;
+     background-color: @light-accent;
+     box-shadow: 0 0 18px @dark-accent;
      overflow-y: scroll;
  }
 
@@ -241,6 +235,19 @@ li {
     .container-out.visible {
         animation-play-state: running;
         display: block;
+        box-shadow: 0 0 50px #000;
+    }
+    .container-in.visible {
+        top: 50px;
+        left: 50px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .container-out.visible {
+        top: 50px;
+        left: 0px;
+        right: 50px;
+        bottom: 0px;
     }
     .container-in,
     .container-out {
@@ -248,51 +255,57 @@ li {
         display: none;
     }
     .container-in {
-        /* animation-play-state: paused; */
-        animation: flipinx 10s linear 0s 1 normal;
+        animation: flipinx 1200ms ease-out 0s 1 normal;
     }
-    
+
     .container-out {
-        /* animation-play-state: paused; */
-        animation: flipoutx 10s linear 0s 1 normal;
+        animation: flipoutx 1200ms ease-out 0s 1 normal;
     }
 
 
     @keyframes flipinx {
         0% {
-            transform: perspective(400px) rotateX(0deg);
-        }
-
-        40% {
-            transform: perspective(400px) rotateX(-10deg);
-        }
-
-        70% {
-            transform: perspective(400px) rotateX(10deg);
-        }
-
-        100% {
             transform: perspective(400px) rotateX(90deg);
+            box-shadow: 0 0 50px #000;
+        }
+        
+        40% {
+            transform: perspective(400px) rotateX(-10deg) scale(0.9);
+            box-shadow: 0 0 500px #000;
+        }
+        
+        70% {
+            transform: perspective(400px) rotateX(10deg) scale(0.9);
+            box-shadow: 0 0 500px #000;
+        }
+        
+        100% {
+            transform: perspective(400px) rotateX(0deg);
+            box-shadow: 0 0 50px #000;
         }
     }
-
+    
     @keyframes flipoutx {
         0% {
             /* opacity: 0; */
-            transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(-90deg);
+            box-shadow: 0 0 50px #000;
         }
-
+        
         40% {
-            transform: perspective(400px) rotateX(10deg);
+            transform: perspective(400px) rotateX(10deg) scale(0.8);
+            box-shadow: 0 0 500px #000;
         }
-
+        
         70% {
-            transform: perspective(400px) rotateX(-10deg);
+            transform: perspective(400px) rotateX(-10deg) scale(0.8);
+            box-shadow: 0 0 500px #000;
         }
-
+        
         100% {
             /* opacity: 1; */
-            transform: perspective(400px) rotateX(-90deg);
+            transform: perspective(400px) rotateX(0deg);
+            box-shadow: 0 0 50px #000;
         }
     }
 /* RESPONSIVE */
@@ -318,11 +331,17 @@ li {
 /*  Responsive */
 
 @media (max-width: 750px) {
-    ul {
+    .header,
+    .header a {
+        width: 100%;
+        margin: 10px 0;
         display: block;
-        text-align: center;
     }
 
+    .container-in,
+    .container-out {
+        overflow-y : scroll;
+    }
     li {
         width: 75%;
     }
