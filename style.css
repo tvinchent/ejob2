@@ -21,6 +21,7 @@ body {
 .bg-purple {
     background-color: #BF0069;
     transform: skew(45deg);
+    transition-duration: 600ms;
     /* overflow-y: scroll; */
 }
 
@@ -75,6 +76,10 @@ h1 {
     padding: 10px;
     box-shadow: 0 0 5px #808080;
     text-transform: uppercase;
+}
+
+.link:hover {
+    cursor: pointer;
 }
 
 .form {
@@ -173,7 +178,7 @@ li:nth-child(odd):hover {
     background-color: rgba(230, 32, 141, 0.733);
 }
 
-li a {
+li {
     color: white;
     text-decoration: none;
     font-family: 'Cardo', sans-serif;
@@ -186,22 +191,47 @@ li a {
  .modal {
      display: none;
      position: fixed;
-     top: 20px;
-     bottom: 20px;
-     left: 20px;
-     right: 20px;
+     top: 40px;
+     bottom: 40px;
+     left: 40px;
+     right: 40px;
+     text-align: center;
      background-color: white;
-     box-shadow: 0 0 18px #808080;
+     box-shadow: 0 0 18px #202020;
+     overflow-y: scroll;
  }
 
- span {
+ .hideModal {
      float: right;
      font-size: 2rem;
-     margin: 10px;
+     margin: 10px 25px;
  }
 
- span:hover {
+ .hideModal:hover {
      cursor: pointer;
+ }
+
+ .leftModal, 
+ .rightModal {
+     font-size: 2rem;
+     padding: 5px;
+     position: absolute;
+     top: 50%;
+
+     transform: translate(-50%, -50%);
+ }
+
+ .leftModal:hover, 
+ .rightModal:hover {
+     cursor: pointer;
+ }
+
+ .leftModal {
+     left: 15px;
+ }
+
+ .rightModal {
+     right: 15px;
  }
 
 /*
@@ -228,7 +258,6 @@ li a {
 
     @keyframes flipinx {
         0% {
-            /* opacity: 0; */
             transform: perspective(400px) rotateX(90deg);
         }
 
@@ -241,7 +270,6 @@ li a {
         }
 
         100% {
-            /* opacity: 1; */
             transform: perspective(400px) rotateX(0deg);
         }
     }

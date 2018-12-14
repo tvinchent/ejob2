@@ -25,13 +25,4 @@ if (isset($_POST['boutton'])) {
 }    
 ?>
 
-    <script langage="Javascript">
-           $(document).on('submit', '#formulaire_mail', function(e) {
-            $.ajax({
-                type: 'post',
-                url: 'action_formulaire.php',
-                data: $(this).serialize(),
-            });
-            e.preventDefault();
-        });
-</script>
+    
